@@ -1,1 +1,15 @@
-{"name":"Hexo","short_name":null,"start_url":"/index.html","theme_color":null,"background_color":null,"display":"standalone","icons":[{"src":"","sizes":"","type":null}]}
+{
+  "name": "Activated Neuron",
+  "short_name": "Activated Neuron",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
