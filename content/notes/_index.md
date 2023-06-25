@@ -1,13 +1,9 @@
 ---
-title: Notes
 # bookFlatSection: false
 # bookToc: true
-# bookHidden: false
-# bookCollapseSection: false
+# bookHidden: true
+bookCollapseSection: true
 bookComments: false
 # bookSearchExclude: false
----
-
-# Notes
-
+weight: 20
 ---

@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Activated Neuron'
 
 theme = 'hugo-book'
+uglyurls = true
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
