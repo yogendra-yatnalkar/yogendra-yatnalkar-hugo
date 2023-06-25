@@ -11,6 +11,10 @@ bookComments: true
 
 # Kullback-Leibler Divergence (KL Divergence)
 
+|             |            |
+| ----------- | ---------- |
+| Last Edited | 25/06/2023 |
+
 ### Definition:
 
 - Measures the distance between 2 prabability distributions
@@ -45,7 +49,7 @@ Multiply the probabilities from both the coins for the corresponding heads and t
 
 ![](kl-divergence/2023-06-25-13-23-53-image.png)
 
-#### General Fomulae:
+#### General Formulae:
 
   ![](kl-divergence/37beef4003f8bc42829a3442f26431d7c02b70a4.png)
 
@@ -53,6 +57,12 @@ Multiply the probabilities from both the coins for the corresponding heads and t
 
   **Cross-entropy Loss is very related to KL Divergence**
 
+### Important Notes:
+
+- KL Divergence is un-symmetric i.e the divergence depends on the distribution placed on the denominator. 
+
+- In other words: Divergence of distribution1 wrt distribution2 is not same as divergence of distribution2 wrt distribution1.  
+  
    ---
 
 ## ** Why take log of probability ?
@@ -64,3 +74,7 @@ Multiply the probabilities from both the coins for the corresponding heads and t
   ![](kl-divergence/2023-06-25-16-12-19-image.png)
   
   ##### KL Divergence is also known as relative entropy between 2 distributions.
+  
+  For good reference to entropy, watch statquest video: 
+  
+  - [Entropy (for data science) Clearly Explained!!! - YouTube](https://www.youtube.com/watch?v=YtebGVx-Fxw) 
