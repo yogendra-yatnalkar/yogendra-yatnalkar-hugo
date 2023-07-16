@@ -15,6 +15,8 @@ bookComments: true
 | ----------- | ---------- |
 | Last Edited | 25/06/2023 |
 
+---
+
 ### Definition:
 
 - Measures the distance between 2 prabability distributions
