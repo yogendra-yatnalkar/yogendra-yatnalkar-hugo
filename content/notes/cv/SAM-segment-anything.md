@@ -11,9 +11,11 @@ bookComments: true
 
 # Segment Anything (SAM)
 
-|             |            |
-| ----------- | ---------- |
-| Last Edited | 16/07/2023 |
+|             |                                                        |
+| ----------- | ------------------------------------------------------ |
+| Last Edited | 16/07/2023                                             |
+| Source:     | - Original Paper (notes till page no 7)                |
+|             | - Youtube: https://www.youtube.com/watch?v=eYhvJR4zFUM |
 
 ---
 
@@ -62,6 +64,10 @@ bookComments: true
 - SAM predicts multiple masks for single image (to battle confusion)
 
 - **Image Encoder:** Image encoder is pretrained **ViT from MAE (Masked Auto-Encoders are Scalable Vision Learners)**. In  MAE, random patches from ViT are masked and an autoencoder is trained to predict the masked patch. 
+  
+  ![](SAM-segment-anything/2023-09-28-17-50-10-image.png)
+  
+  **SAM uses this MAE encoder as its base encoder**
 
 - **Prompt Encoder:** 
   
@@ -82,6 +88,8 @@ bookComments: true
   - Later, up-sample and pass it to a linear classifier 
 
 - **Ambiguity and Backprop**: For each input, 3 masks are predicted and during backprop for loss computation, the mask with least amount of loss is counted. Loss is computed using IoU.
+  
+  ![](SAM-segment-anything/2023-09-28-22-14-46-image.png)
 
 - **Efficiency:** Post encoder embedding, the prompt encoder and decoder can work on CPU (**web-browser**) with 50 ms latency. 
 
@@ -102,4 +110,5 @@ bookComments: true
 - **Dataset and Data-Engine:** 11 mil images, 1 billion masks. Tag with the help of model, retrain and retag --> Cycle continues...
   
   - **Responsible AI:** Images are taken from all over the globe across all human species.
-  - 
+
+---
