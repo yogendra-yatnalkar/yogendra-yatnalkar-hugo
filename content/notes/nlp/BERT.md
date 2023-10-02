@@ -3,7 +3,7 @@ title: "BERT"
 weight: 10
 # bookFlatSection: false
 # bookToc: true
-# bookHidden: false
+bookHidden: true
 bookCollapseSection: false
 bookComments: true
 # bookSearchExclude: false

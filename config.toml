@@ -2,7 +2,8 @@ baseURL = 'https://yogendra-yatnalkar.github.io/'
 languageCode = 'en-us'
 title = 'Activated Neuron'
 
-theme = 'hugo-book'
+theme = ["hugo-embed-pdf-shortcode", "hugo-book"]
+enableInlineShortcodes = true
 uglyurls = true
 
 [params]
@@ -22,7 +23,7 @@ uglyurls = true
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
   # BookMenuBundle = '/menu'
-
+  
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'

@@ -2,7 +2,7 @@
 title: "SAM-Segment-Anything"
 weight: 10
 # bookFlatSection: false
-# bookToc: true
+# bookToc: false
 # bookHidden: false
 bookCollapseSection: false
 bookComments: true
