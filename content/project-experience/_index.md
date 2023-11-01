@@ -5,7 +5,7 @@ title: Project Experience
 
 # bookToc: true
 
-bookHidden: true
+bookHidden: false
 bookCollapseSection: false
 bookComments: false
 
