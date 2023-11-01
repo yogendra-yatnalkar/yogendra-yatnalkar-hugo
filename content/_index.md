@@ -15,37 +15,53 @@ bookComments: false
 
 ---
 
-||||| |
-|-- | -- | -- | -- | -- |
+|                         |                    |                                                                       |                                                 |                                                                     |
+| ----------------------- | ------------------ | --------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------- |
 | **Connect/Follow Over** | yogenyat@gmail.com | [LinkedIn](https://www.linkedin.com/in/yogendra-yatnalkar-2477b3148/) | [GitHub](https://github.com/yogendra-yatnalkar) | [YouTube](https://www.youtube.com/channel/UCBv-Hg0vmSRdiUSlWDbcTTg) |
 
 ## About Me:
 
 ![](index/dbe15eb43570e14c754478fe250f1003a321be0c.jpg)
 
-I am a **Senior Machine/Deep Learning Engineer** at **Quantiphi Analytics**. I have been working professionally (and in the AI domain) **since August 2020**. After working on various data-domain, I think that I am more inclined towards Computer Vision (I am biased). I have industry experience across various use-cases ranging from: 
+I am a **Senior Machine Learning Engineer with over three years** of industry experience, working mainly on **AWS** cloud and partly on **GCP** cloud. In my current organization, I play three roles:
 
-- Image Segmentation (**U2Net**, **UNet, SegmentAnything ..**.... the list is quite big)
+- **ML Engineer**: I develop custom ML/DL solutions for global clients. 
+  - Have hands-on experience with:
+    - **Tabular-Data:** Churn Prediction, Classification, etc
+    - **Breadth and Depth of Computer Vision domain:** Segmentation, Object Detection, Image Similarity, Video Deduplication, Video Analytics, etc.
+    - **MLOps:** SageMaker Jobs, SageMaker Pipelines, Airflow, Building Components like: Processing, Training, Monitoring, Explainability, etc
+- **Research Engineer**: I focus on Computer Vision research and have two main activities: 
+  - I explore new techniques and papers and try to see if they can be applied to any of the current projects (i.e., I try to find applications of the latest papers).
+  - I explore new AWS ML services and evaluate their performance and usability.
+- **Pre-sales ML Consultant**: I also **assist the sales team** in my organization by interacting with customers, understanding their problems, and proposing possible solutions, especially for Computer Vision use cases.
 
-- GAN's (Trained and deployed **custom GAN** to generate shadows below car)
+---
 
-- **Video Data:** Video Deduplication **(Worked on 50 TB+ of raw video files for the task of de-duplication)****, Ad-Brand-Identification from sports-videos
+### Few Technical Achievements:
 
-- Churn Prediction (Worked on **1.5+ TB of CSV** data to generate 80+ features to predict churn in **EdTech domain**) --> Worked with a lot of **SQL🔥!!**
-
-- **MLOps** on **AWS** (Few tags: Pipelines - Airflow/SageMaker-Pipeline, Drift, Retraining, automatic trigger, Explainability.....)
-
-- **Tagging** (On different time-lines, I have managed more than 8 taggers to for more than 2 months to tag **thousands of images for segmentation, GAN's and object detection**)
-
-- Object Detection (Used **Yolo v5**to detect web-elements on web-page)
-  
-  (I think I should stop........ the list will become un-readable now....)
+- I developed and deployed a custom **GAN model for “Shadow Generation below objects”** in early 2022.
+- I was one of the core developers of Quantiphi’s **MLOps product** on AWS : **“NeuralOps”**.
+- **Conducting research on:** 
+  - Backtracking AWS Lookout for Vision (I was **recognized by AWS Community Builders** for this)
+  - **Multi-Task Learning**
+  - **Prompt-less Finetuning** of MetaAI Segment Anything model (SAM)
+  - **Balancing Loss impact** on ML training where multiple loss metrics are used simultaneously 
+  - ..... and many more
+- **Experience on GPU**: 
+  - **Training** a salient image segmentation model **for seven days on a single GPU** in 2021
+  - **Exploring Multi-GPU training** with Horovod, Pytorch DP, Pytorch DDP, etc
+  - Hosting large ML models on **AWS Inferentia**
+  - **Using FFMPEG on GPU** for large-scale audio-video transcoding.
+  - .... and many more
+- **Working at scale:** 
+  -  I worked on **1.5 TB of CSV data** for churn prediction use case. 
+  - Worked on **70+ TB of raw audio-video data** for content-deduplication use case
 
 ---
 
 ## More About Me:
 
-Hi there, if you have reached till the end then you can visit the following pages: 
+Hey there, if you have reached till the end then you can visit the following pages: 
 
 - ### [My projects and industry experience:](more-about-me/my-projects-and-experience.html)
 - ### [My Resume](/resume)

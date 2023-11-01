@@ -3,7 +3,7 @@ title: "BERT"
 weight: 10
 # bookFlatSection: false
 # bookToc: true
-bookHidden: true
+bookHidden: false
 bookCollapseSection: false
 bookComments: true
 # bookSearchExclude: false
@@ -21,12 +21,6 @@ Source:
 
 - Original Paper: https://arxiv.org/pdf/1810.04805v2.pdf 
 
-
-
-
-
-
-
 ---
 
 Source:
@@ -36,7 +30,9 @@ Source:
 ## Before BERT:
 
 - LSTM's were used.
+
 - Problems:
+  
   - Slow as each word is processed at a time (sequentially)
   - Not truly bi-directional (left to right and right to left at a time in bidirectional LSTM)
 
@@ -69,5 +65,3 @@ Source:
   - Only replace last few layers of the original architecture
   
   --- 
-  
-  

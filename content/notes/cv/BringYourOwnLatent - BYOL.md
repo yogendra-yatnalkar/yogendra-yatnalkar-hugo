@@ -10,7 +10,6 @@ draft: true
 # bookSearchExclude: false
 ---
 
-
 # Bootstrap Your Own Latent (BYOL):
 
 Tags: Self-Supervised Learning, SSL, 
