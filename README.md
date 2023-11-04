@@ -15,7 +15,7 @@
 - Added pdf support for resume using: https://github.com/anvithks/hugo-embed-pdf-shortcode/ 
   - for adding pdf's, uglyurls are causing an issue. Hence in the frontmatter of individual markdown file, change to url to not display ".html" extension.
   - Refer to the markdown of "Resume" section
-- 
+- Added Google Analytics for user tracking. The google-analytics keyword needs to be placed on the top line of the "config.toml" file. 
 
 Notes:
   - The folder names where content is placed should have lower-case characters only

@@ -18,3 +18,5 @@ bookComments: true
 - Difference between vector DB's and FAISS library (by Meta) ? 
   
   - From my current knowledge both are same, but then why is everyone behind vector DB's instead of using FAISS directly ? 
+
+- Null Hypothesis test >> p-values >> calculated using t-test or z-test

@@ -63,5 +63,4 @@ I am a **Senior Machine Learning Engineer with over three years** of industry ex
 
 Hey there, if you have reached till the end then you can visit the following pages: 
 
-- ### [My projects and industry experience:](project-experience.html)
 - ### [My Resume](/resume)

@@ -5,7 +5,7 @@ title: Project Experience
 
 # bookToc: true
 
-bookHidden: false
+bookHidden: true
 bookCollapseSection: false
 bookComments: false
 
@@ -15,4 +15,10 @@ bookComments: false
 
 ---
 
+### [My projects and industry experience:](project-experience.html)
+
+
+
 {**WORK IN PROGRESS:** Sorry, I am yet to write things in this section. I have just created the template as of now….. }
+
+Add this later in the main page: (markdown text)

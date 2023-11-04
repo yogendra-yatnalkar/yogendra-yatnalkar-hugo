@@ -17,5 +17,3 @@ bookComments: true
 - curl is library but wget is a CLI tool. 
 - curl is used for both way data transfer (src to detination and vice-versa)
 - But, wget can be used only for single way data transfer, example: downloading something form a web-server. 
-
-Null Hypothesis test >> p-values >> calculated using t-test or z-test >> 
