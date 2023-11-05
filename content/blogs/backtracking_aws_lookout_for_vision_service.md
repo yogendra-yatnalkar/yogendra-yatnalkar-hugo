@@ -1,12 +1,23 @@
 ---
 title: "Backtracking AWS Lookout for Vision Service"
-weight: 10
+weight: -2
+prev: /blogs/finding-nth-aggregate-from-every-group-aws-athena.html
 # bookFlatSection: false
 # bookToc: true
 bookHidden: false
 bookCollapseSection: false
 bookComments: true
 # bookSearchExclude: false
+
+description : "Blog related to AWS Lookout for Vision Service and how I backtracked it for ML inference without AWS API"
+tags : [
+    "Yogendra Yatnalkar",
+    "Python",
+    "OpenCV",
+    "AWS",
+    "Inference",
+    "Edge IOT",
+]
 ---
 
 # Backtracking AWS Lookout For Vision Service

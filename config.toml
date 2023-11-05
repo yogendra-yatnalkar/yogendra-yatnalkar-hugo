@@ -1,7 +1,21 @@
 googleAnalytics = 'G-DTLBL509Z2'
 baseURL = 'https://yogendra-yatnalkar.github.io/'
 languageCode = 'en-us'
-title = 'Activated Neuron'
+DefaultContentLanguage = "en"
+title = 'Yogendra Y.'
+weight = 1
+description = "Personal website of Yogendra Yatnalkar. This website will contain ML blogs and notes written by Yogendra Yatnalkar"
+tags = [
+    "Yogendra Yatnalkar",
+    "Python",
+    "OpenCV",
+    "AWS",
+    "GCP",
+    "MLOps",
+    "Machine Learning",
+    "Deep Learning",
+    "Inference"
+]
 
 theme = ["hugo-embed-pdf-shortcode", "hugo-book"]
 enableInlineShortcodes = true

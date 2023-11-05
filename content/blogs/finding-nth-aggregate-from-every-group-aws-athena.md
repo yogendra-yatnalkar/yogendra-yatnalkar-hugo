@@ -1,12 +1,20 @@
 ---
 title: "Finding the n’th Aggregate Value from Every Group in AWS Athena/Presto"
-weight: 10
+weight: -1
 # bookFlatSection: false
 # bookToc: true
 bookHidden: false
 bookCollapseSection: false
 bookComments: true
 # bookSearchExclude: false
+
+description : "Blog related to finding nth aggregate value from every group in AWS Athena or Presto"
+tags : [
+    "Yogendra Yatnalkar",
+    "SQL",
+    "Presto",
+    "Aggregation",
+]
 ---
 
 # Finding the n’th Aggregate Value from Every Group in AWS Athena/Presto
