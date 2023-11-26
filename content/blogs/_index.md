@@ -10,6 +10,16 @@ bookComments: false
 
 ## List of Blogs:
 
+---
+
+[Meta-AI SAM: AutoMatic Semantic Segmentation](/blogs/sam-automatic-semantic-segmentation.html)
+
+- **Date:** November26, 2023
+
+- **Kaggle Link:** https://www.kaggle.com/code/yogendrayatnalkar/finetuning-segment-anything 
+
+- **Github Link**: https://github.com/yogendra-yatnalkar/SAM-Automatic-Semantic-Segmentation 
+
 --- 
 
 [Backtracking AWS Lookout for Vision Service](/blogs/backtracking_aws_lookout_for_vision_service.html)

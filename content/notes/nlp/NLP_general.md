@@ -51,6 +51,7 @@ Date: 02/11/2023
     - Mask word and predict the masked word
   
   - ***LLM Fine-Tuning:*** Again **unsupervised training like next word prediction**, but on small amount of task-specific data 
+    - **Note**: In Computer vision mainly, when we say fine-tuning, we usually train only a small part of model (usually last few layers) again. **But in the case of LLM's, we retrain the entire Model.**
     
     - Within this second step, the paradigm has recently shifted to **Instruction Finetuning**. In this, the input text is of the form: *Instruction --> Context --> Question*. For further knowledge, a good source is: [Instruction Fine-tuning of Large Language Models | Niklas Heidloff](https://heidloff.net/article/instruct-tuning-large-language-models/) 
     
@@ -109,6 +110,16 @@ Date: 02/11/2023
 - To increase performance of LLM prediction, we should try to reduce output tokens as compared to input tokens. It will have **HUGE Impact**. 
 
 - KV Cache 
+
+- Continuous Batching (different than dynamic batching)
+
+- Paged Attention
+
+- For Nvidia GPUs, use dtype: **bfloat16** instead of **fp16**. The "blfoat16" dtype is Nvidia Sepecfic which uses more memory but prvides faster compute. 
+
+- Flash Attention (v2 at the time of writing) --> Need to confirm if the principles of Flash-Attention are also application to non-Nvidia GPU's. Eg: Inferentia/TPU
+
+- 
 
 ---
 
