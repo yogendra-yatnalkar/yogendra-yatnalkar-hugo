@@ -32,7 +32,9 @@ tags : [
 
 ---
  
-### Task: Semantically segment objects from image **AUTOMATICALLY** with the help of **META AI SAM**, without PROMPTS/TRAINING
+### Task:
+
+##### Semantically segment objects from image **AUTOMATICALLY** with the help of **META AI SAM**, without PROMPTS/TRAINING
 
 ---
 
