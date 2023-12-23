@@ -32,13 +32,12 @@ tags : [
 
 ---
  
-### Task:
+## Task:
 
-##### Semantically segment objects from image **AUTOMATICALLY** with the help of **META AI SAM**, without PROMPTS/TRAINING
+- #### Semantically segment objects from image **AUTOMATICALLY** with the help of **META AI SAM**, without PROMPTS/TRAINING
 
----
 
-### Segment all the pepperoni pieces from the pizza topping
+- ### Segment all the pepperoni pieces from the pizza topping
 
 ![](https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2014/09/Classic-Pepperoni-Pizza-1.jpg)
 
