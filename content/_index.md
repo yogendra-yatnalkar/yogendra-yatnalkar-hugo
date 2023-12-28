@@ -30,7 +30,8 @@ I am a **Senior Machine Learning Engineer with over three years** of industry ex
     - **Tabular-Data:** Churn Prediction, Classification, etc
     - **Breadth and Depth of Computer Vision domain:** Segmentation, Object Detection, Image Similarity, Video Deduplication, Video Analytics, etc.
     - **MLOps:** SageMaker Jobs, SageMaker Pipelines, Airflow, Building Components like: Processing, Training, Monitoring, Explainability, etc
-- **Research Engineer**: I focus on Computer Vision research and have two main activities: 
+    - **NLP**: Currently building LLM and RAG based chatbots using AWS Bedrock and AWS OpenSearch.
+- **Research Engineer**: I primarily focus on Computer Vision research and have two main activities: 
   - I explore new techniques and papers and try to see if they can be applied to any of the current projects (i.e., I try to find applications of the latest papers).
   - I explore new AWS ML services and evaluate their performance and usability.
 - **Pre-sales ML Consultant**: I also **assist the sales team** in my organization by interacting with customers, understanding their problems, and proposing possible solutions, especially for Computer Vision use cases.
