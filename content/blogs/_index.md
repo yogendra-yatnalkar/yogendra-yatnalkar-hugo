@@ -12,6 +12,16 @@ bookComments: false
 
 ---
 
+### [Promtless Task-Specific Finetuning of MetaAI Segment-Anything](/blogs/promtless-taskspecific-finetuning-segment-anything.html)
+
+- **Date:** January 01, 2024
+
+- **Kaggle Link:** https://www.kaggle.com/code/yogendrayatnalkar/promtless-taskspecific-finetuning-segment-anything 
+
+- **Github Link**: https://github.com/yogendra-yatnalkar/SAM-Promptless-Task-Specific-Finetuning/tree/main 
+
+---
+
 ### [End-to-End MLOps on AWS (3 blogs)](/blogs/end-to-end-mlops-on-aws.html)
 
 - **Date:** December 26, 2023

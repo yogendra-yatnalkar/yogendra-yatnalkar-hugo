@@ -1,5 +1,5 @@
 ---
-title: "NLP-General"
+title: "Transformers at Training vs Inference"
 weight: 10
 # bookFlatSection: false
 # bookToc: true
