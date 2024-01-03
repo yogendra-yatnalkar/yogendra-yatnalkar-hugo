@@ -24,3 +24,9 @@ Scribbling the content seen in the day:
     - Has direct support for colab and huggingface. **Made on gradio**
     - Looks quite good and easy to use: 
         - On early analysis, it looks like: it can do inpainting/outpainting and image-super-resolution as well. 
+
+- **torchserve:**
+    - on g4dn.xlarge, when my GPU utilization was 100%, I increased the instance type to g4dn.2xlarge (which is having the same gpu but more CPU) 
+        - Post that, once I increased dynamic batch size or any other important parameter, the RPS was still the same
+        - **Conclusion**: Once gpu memory utilization is full, whatever we do, it wont increasing the actual load. 
+        - **Importance of AWS elastic inference**: GPU as a service. 
