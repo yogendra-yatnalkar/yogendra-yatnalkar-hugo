@@ -26,11 +26,16 @@ Scribbling the content seen in the day:
         - On early analysis, it looks like: it can do inpainting/outpainting and image-super-resolution as well. 
 
 - **torchserve:**
-    - on g4dn.xlarge, when my GPU utilization was 100%, I increased the instance type to g4dn.2xlarge (which is having the same gpu but more CPU) 
-        - Post that, once I increased dynamic batch size or any other important parameter, the RPS was still the same
+    - Started with g4dn.xlarge instance type and model: ViT L16. Later updgraded to G4Dn.2xlarge to check the effect of increasing the CPU number and CPU memory. 
+        - Played a lot of dynamic batching and worker count on single GPU. Came to 2 conclusion: 
+            1. Dynamic batching helps (see below)
+            2. On dynamic batching, once GPU utlization becomes 100%, no one can help later
         - **Conclusion**: Once gpu memory utilization is full, whatever we do, it wont increasing the actual load. 
-        - **Importance of AWS elastic inference**: GPU as a service. 
+        - **Importance of AWS elastic inference** (GPU as a service): Even though this ViT L16 is a medium level model with I believe update 300M params, 1 model only uses around 20 to 30% of the memory. With dynamic batching, the utilization is 100% even with 1 worker, so we are effectively not using memory at the fullest. 
     - Does Dynamic batching helps ? On g4dn:
         - Yes. When it was set to 1, the max RPS was 21
+            - When batch-size was 1 but workers was also 1, the gpu utilization was around 85%
+            - When workers were increased to 4 and batch-size was still 1, the gpu utilization became 100, but that did not affect the RPS. 
+            - In both cases, the response time was slightly faster than dynamic batching. 
         - When it was set to 32, the max RPS was 32 
-        - in both the cases, the workers were set to 1
+            - when dynamic batching is on, whatever is the worker count, it does no affect the RPS (for this model)
