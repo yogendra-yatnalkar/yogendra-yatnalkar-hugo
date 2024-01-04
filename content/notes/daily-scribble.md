@@ -30,3 +30,7 @@ Scribbling the content seen in the day:
         - Post that, once I increased dynamic batch size or any other important parameter, the RPS was still the same
         - **Conclusion**: Once gpu memory utilization is full, whatever we do, it wont increasing the actual load. 
         - **Importance of AWS elastic inference**: GPU as a service. 
+    - Does Dynamic batching helps ? On g4dn:
+        - Yes. When it was set to 1, the max RPS was 21
+        - When it was set to 32, the max RPS was 32 
+        - in both the cases, the workers were set to 1
