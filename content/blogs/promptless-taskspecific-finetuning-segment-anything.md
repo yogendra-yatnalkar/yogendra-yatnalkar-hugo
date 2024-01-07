@@ -1,5 +1,5 @@
 ---
-title: "Promtless Task-Specific Finetuning of MetaAI Segment-Anything"
+title: "Promptless Task-Specific Finetuning of MetaAI Segment-Anything"
 weight: -5
 # bookFlatSection: false
 # bookToc: true
@@ -19,14 +19,14 @@ tags : [
 ]
 ---
 
-# Promtless Task-Specific Finetuning of MetaAI Segment-Anything
+# Promptless Task-Specific Finetuning of MetaAI Segment-Anything
 ---
 
 #### **Date:** January 01, 2024
 
 #### **NOTE:**
 
-- The NB was originally developed on Kaggle: https://www.kaggle.com/code/yogendrayatnalkar/promtless-taskspecific-finetuning-segment-anything
+- The NB was originally developed on Kaggle: https://www.kaggle.com/code/yogendrayatnalkar/promptless-taskspecific-finetuning-of-metaai-sam
 - Related Github Repository: https://github.com/yogendra-yatnalkar/SAM-Promptless-Task-Specific-Finetuning/tree/main 
 
 ---

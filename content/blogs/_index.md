@@ -12,11 +12,11 @@ bookComments: false
 
 ---
 
-### [Promtless Task-Specific Finetuning of MetaAI Segment-Anything](/blogs/promtless-taskspecific-finetuning-segment-anything.html)
+### [Promptless Task-Specific Finetuning of MetaAI Segment-Anything](/blogs/promptless-taskspecific-finetuning-segment-anything.html)
 
 - **Date:** January 01, 2024
 
-- **Kaggle Link:** https://www.kaggle.com/code/yogendrayatnalkar/promtless-taskspecific-finetuning-segment-anything 
+- **Kaggle Link:** https://www.kaggle.com/code/yogendrayatnalkar/promptless-taskspecific-finetuning-of-metaai-sam 
 
 - **Github Link**: https://github.com/yogendra-yatnalkar/SAM-Promptless-Task-Specific-Finetuning/tree/main 
 
