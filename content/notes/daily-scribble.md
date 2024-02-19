@@ -18,12 +18,16 @@ Scribbling the content seen in the day:
     - Has support for **continuous batching** (very useful for transformer/decoder architecture)
     - When released, claims to be much much faster than huggingface TGI. Now, even HF uses paged-attention for inference 
 
+---
+
 - **Fooocus:**
     - Fooocus is an image generating software. Fooocus is a rethinking of Stable Diffusion and Midjourney’s designs. 
     - **Made by the controlnet authors** 
     - Has direct support for colab and huggingface. **Made on gradio**
     - Looks quite good and easy to use: 
         - On early analysis, it looks like: it can do inpainting/outpainting and image-super-resolution as well. 
+
+---
 
 - **torchserve:**
     - Started with g4dn.xlarge instance type and model: ViT L16. Later updgraded to G4Dn.2xlarge to check the effect of increasing the CPU number and CPU memory. 
@@ -40,6 +44,10 @@ Scribbling the content seen in the day:
         - When it was set to 32, the max RPS was 32 
             - when dynamic batching is on, whatever is the worker count, it does no affect the RPS (for this model)
 
+
+---
+
+---
 
 ## February:
 
@@ -61,3 +69,23 @@ Scribbling the content seen in the day:
     - **How does the attention mask is calcuated:**
         - From the above example of 1023 tokens: For the first 512 tokens, the attention mask should be 1. For the remaining 512 tokens the attention mask should have a value of 0. 
         - This means, we are telling the attention mask to not attend the EOS padded tokens. 
+
+---
+
+- **Shape values:**
+    - For a given record, we have following values: y_pred, y_test, x_pred --> if shape_val was the shap_values for the given x_pred and exp_val was the expected valulue for the entire set (which is nothing but the average of the y_pred) 
+        - Then, **y_pred == sum(shap_value) + exp_val** 
+    - The feature shap value is 0 if feature value is missing or null. 
+    - While using XGBoost, if we are using the native library (Not the one integrated with SKlearn), we can get shap values directly from the predicted value. 
+    - (with the help of Google Gemini) ***How are shap values computed ?*** (**NOTE:** Very high level explanation)  
+        - First compute the baseline prediction value >>> which is nothing but the expected value for all the predictions (average of entire y_pred) 
+        - ***Compute Marginal Contributions and Average:*** 
+            - Suppose we had 4 features, and we have started with calculation of shap value for feature1: 
+                - then compute all possible combination of feature 1 with other features 
+                - like: (feature1), (feature1, feature2), (feature1, feature3), (feature1,2,3)..... etc etc
+                - When we just consider feature1, all other values will be NULL or 0 in the input 
+                - Calculate the contribute of every combination for a given feature and average those >>> This is the shap value for a given feature1 for a single record. 
+                - Now, perform this for every feature for every record within the dataset. 
+
+---
+
