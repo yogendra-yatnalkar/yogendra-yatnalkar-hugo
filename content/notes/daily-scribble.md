@@ -72,7 +72,7 @@ Scribbling the content seen in the day:
 
 ---
 
-- **Shape values:**
+- **SHAP values:**
     - For a given record, we have following values: y_pred, y_test, x_pred --> if shape_val was the shap_values for the given x_pred and exp_val was the expected valulue for the entire set (which is nothing but the average of the y_pred) 
         - Then, **y_pred == sum(shap_value) + exp_val** 
     - The feature shap value is 0 if feature value is missing or null. 

@@ -3,7 +3,7 @@ title: "Bring Your Own Latent Space"
 weight: 10
 # bookFlatSection: false
 # bookToc: true
-bookHidden: true
+bookHidden: false
 bookCollapseSection: false
 bookComments: true
 draft: true
