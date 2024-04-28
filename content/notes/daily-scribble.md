@@ -89,3 +89,11 @@ Scribbling the content seen in the day:
 
 ---
 
+## April:
+
+- **Layer Norm vs Batch Norm vs Instance Norm vs Group Norm:**
+    - For CV: 
+        - ![Norm for cv](daily-scribble/image.png)
+    - For NLP: 
+        - Layer Norm for NLP (Transformers) looks exactly like **Instance Norm** of CV 
+        - ![](daily-scribble/2024-04-27-18-42-10.png)
