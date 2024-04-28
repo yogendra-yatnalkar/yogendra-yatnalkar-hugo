@@ -36,7 +36,7 @@ bookComments: true
 	- This 	is a probabiltiy distribution which tell the probability of getting K successes in N trials
 		- Note: Each trial is called a "Bernoulli Trail" 
 		
-		- ![probabiltiy_distribution](notes/image-1.png)
+		- ![probabiltiy_distribution](Stable-Diffusion/image-1.png)
 
 	- Real life application: Helps in making a random judgement with limited amount of data 
 
@@ -49,8 +49,9 @@ bookComments: true
 			- Lets take another example, where out of 10 times, head will appear 6 times given P(H) is still 0.5
 				- N=10, k=5, p=0.5 --> 	0.205 --> 20% likelihood 
 
-DDPM: 
-- What is Nvidia's Progressive GAN
+## DDPM: 
+
+### What is Nvidia's Progressive GAN
 	- Progressive GAN: 
 		- Normal GAN but start with: 4x4 block first, once this part is converged, go ahead
 		- Next thing, noise will be 4x4 --> upsmaple: 8x8 --> Generator output: 8x8 --> Downsample 4x4 --> check with discriminator
@@ -59,21 +60,21 @@ DDPM:
 			- It is difficult to converge any GAN and get even more difficult on larger images 
 			- starting with small shape and going ahead helps 
 
-- Inception Score: 
-	- Generate 30k images form the generative model 
-	- pass it through a inception network 
-	- Important: calculate the conditional and marginal probabiltiy distribution  
-		- Conditional Probability Distribution: 
-			- record all the values from the softmax layer for the 30K images inferrred 
-			- The entropy in this case (for individual sample) should be high --> which means the model is confient in classifying the input --> which in short means the generated image is of quality for which the model is able to predict well (generated quality + object refineness)
-		- Marginal Probability Distribution:
-			- For thr 30k inferred probability scores per calls, avg per class 
-			- The avg value is the Marginal probabiltiy
-			- The entropy of marginal probability should be high which means the data has variety of samples 
-			SIDE NOTE: At one place, I have also read that instead of avg the conditional probability, we infer from real images (fraction of images from every class) and avg from that (instead of using generated images) --> and this forms as the marginal probability aginst which the KL divergece will be calculated.
-	- Caluculate the KL divergence between 2 marginal distribution and Conditional distribution 
-	- KL divergence is the unsymmetric relative entropy between the 2 probability distributions
-	- IS score is: **e raise to KL divergence** 
+### Inception Score: 
+- Generate 30k images form the generative model 
+- pass it through a inception network 
+- Important: calculate the conditional and marginal probabiltiy distribution  
+	- Conditional Probability Distribution: 
+		- record all the values from the softmax layer for the 30K images inferrred 
+		- The entropy in this case (for individual sample) should be high --> which means the model is confient in classifying the input --> which in short means the generated image is of quality for which the model is able to predict well (generated quality + object refineness)
+	- Marginal Probability Distribution:
+		- For thr 30k inferred probability scores per calls, avg per class 
+		- The avg value is the Marginal probabiltiy
+		- The entropy of marginal probability should be high which means the data has variety of samples 
+		SIDE NOTE: At one place, I have also read that instead of avg the conditional probability, we infer from real images (fraction of images from every class) and avg from that (instead of using generated images) --> and this forms as the marginal probability aginst which the KL divergece will be calculated.
+- Caluculate the KL divergence between 2 marginal distribution and Conditional distribution 
+- KL divergence is the unsymmetric relative entropy between the 2 probability distributions
+- IS score is: **e raise to KL divergence** 
 
 FID SCORE (Yet to read in detail)
 
@@ -94,33 +95,33 @@ FID SCORE (Yet to read in detail)
 	- we are doing this in a hope that this is easier to converge as compared to VAE  
 
 
-- Variational Bound: 
-	- Fact: Log is a concave function: 
-		- ![alt text](notes/image.png)
-		- https://www.youtube.com/watch?v=pStDscJh2Wo 
+## Variational Bound: 
+- Fact: Log is a concave function: 
+	- ![alt text](Stable-Diffusion/image.png)
+	- https://www.youtube.com/watch?v=pStDscJh2Wo 
 
-	- What is likelihoood ? 
-		- it measures how well a model fits the dataset  
-		- For a given input, using a given model M, we predict with a probability p that the outcome will be o --> How can we trust this ? --> Likelihood helps us over here in determining the amount of trust. 
-		- (Yogendra's explanation -- future readers, read it with a pinch of salt) So when we train a classification model, from first epoch itself we have a model with us which assigns a probability that a given object will be to some outcome o. Within the training process, we are maximising our turst on the model by using cross entropy loss (which is nothing but negative log-likelihood loss) 
-		- Likelihood deals with fitting model, given some data 
-		- Probability quantifies anticipation of outcome from a know distribution,
-		- Likelihood quantifies trust in the model from which we assume the observed data is coming
-		- https://hrngok.github.io/posts/likelihood/ 
+- What is likelihoood ? 
+	- it measures how well a model fits the dataset  
+	- For a given input, using a given model M, we predict with a probability p that the outcome will be o --> How can we trust this ? --> Likelihood helps us over here in determining the amount of trust. 
+	- (Yogendra's explanation -- future readers, read it with a pinch of salt) So when we train a classification model, from first epoch itself we have a model with us which assigns a probability that a given object will be to some outcome o. Within the training process, we are maximising our turst on the model by using cross entropy loss (which is nothing but negative log-likelihood loss) 
+	- Likelihood deals with fitting model, given some data 
+	- Probability quantifies anticipation of outcome from a know distribution,
+	- Likelihood quantifies trust in the model from which we assume the observed data is coming
+	- https://hrngok.github.io/posts/likelihood/ 
 
-	For further catchup, read: https://xyang35.github.io/2017/04/14/variational-lower-bound/ 
+For further catchup, read: https://xyang35.github.io/2017/04/14/variational-lower-bound/ 
 
 
-- Extra notes:
-	- what is descritization of a function: Converting a continues function into descrete function or parts 	
-	- We converted a image from some space to gaussian space in a descrete number of steps 
-		- in this process, we step by step, added small gaussian noise to the input and eventually, the input becomes gaussian noise itself. 
-		- formula: xt = root(1 - beta_t)*x(t-1) * root(beta_t)*Gaussian_space(mean = 0, std = 1)
-			-> Start with small beta_t ..... and eventually incease it 
-			-> which shows that, at start the noise will be very less and at the last step, the (1-beta_t) will become 0 or close to 0, by which the input becomes 0 and the xt will be equal to some form of gaussain distribution (with full of noise) 
-			- VAE does something similar, but it does it in a single step. **In VAE, when the image is generated back from multi-variate gaussian normal distribution (vector of mean and std), it happens in a single step. But you can imagine, since it has not learned the middle steps, the model will not converge well, which also means the generation quality will degrade.**
-    - The change of beta from t0 to time-step t take a linear schedule (and not a constant increase) --> that is because, till 70% of the process, the jumps should be higher (highest at the start) and when it is close to the end, the jumps should be very small. 
-	- Cross entropy is average of negative log-likelihood function. Log-likelihood explains how good a mathematical model fits a function 
+## Extra notes:
+- what is descritization of a function: Converting a continues function into descrete function or parts 	
+- We converted a image from some space to gaussian space in a descrete number of steps 
+	- in this process, we step by step, added small gaussian noise to the input and eventually, the input becomes gaussian noise itself. 
+	- formula: xt = root(1 - beta_t)*x(t-1) * root(beta_t)*Gaussian_space(mean = 0, std = 1)
+		-> Start with small beta_t ..... and eventually incease it 
+		-> which shows that, at start the noise will be very less and at the last step, the (1-beta_t) will become 0 or close to 0, by which the input becomes 0 and the xt will be equal to some form of gaussain distribution (with full of noise) 
+		- VAE does something similar, but it does it in a single step. **In VAE, when the image is generated back from multi-variate gaussian normal distribution (vector of mean and std), it happens in a single step. But you can imagine, since it has not learned the middle steps, the model will not converge well, which also means the generation quality will degrade.**
+- The change of beta from t0 to time-step t take a linear schedule (and not a constant increase) --> that is because, till 70% of the process, the jumps should be higher (highest at the start) and when it is close to the end, the jumps should be very small. 
+- Cross entropy is average of negative log-likelihood function. Log-likelihood explains how good a mathematical model fits a function 
 
 ---
 ---
