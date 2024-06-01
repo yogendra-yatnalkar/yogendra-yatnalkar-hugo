@@ -3,7 +3,7 @@ title: "ELBO: Evidence Lower Bound"
 weight: 10
 # bookFlatSection: false
 # bookToc: true
-bookHidden: false
+# bookHidden: false
 bookCollapseSection: false
 bookComments: true
 # bookSearchExclude: false
@@ -15,3 +15,4 @@ bookComments: true
 |             |            |
 | ----------- | ---------- |
 | Last Edited | 18/02/2024 |
+

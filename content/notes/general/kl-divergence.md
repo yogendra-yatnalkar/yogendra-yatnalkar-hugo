@@ -80,3 +80,10 @@ Multiply the probabilities from both the coins for the corresponding heads and t
   For good reference to entropy, watch statquest video: 
   
   - [Entropy (for data science) Clearly Explained!!! - YouTube](https://www.youtube.com/watch?v=YtebGVx-Fxw) 
+
+---
+### Extra Note: 
+20/05/2024
+
+- Adding some random thinking: 
+  - I waas just thinking, if I had 2 datasets with different strength (Not probability distribution right away), can I calculate drift with KL Divergence ?

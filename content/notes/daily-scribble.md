@@ -97,3 +97,6 @@ Scribbling the content seen in the day:
     - For NLP: 
         - Layer Norm for NLP (Transformers) looks exactly like **Instance Norm** of CV 
         - ![](daily-scribble/2024-04-27-18-42-10.png)
+
+- **Residual Connection/Skip Connection:**
+    - In skip connection, since we are adding the intial output to some further layer output, we should take care to keep the **h * w * c** same. 
