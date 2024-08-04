@@ -15,13 +15,21 @@ bookComments: false
 
 ---
 
-|                         |                    |                                                                       |                                                 |                                                                     |
+<!-- |                         |                    |                                                                       |                                                 |                                                                     |
 | ----------------------- | ------------------ | --------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------- |
-| **Connect/Follow Over** | yogenyat@gmail.com | [LinkedIn](https://www.linkedin.com/in/yogendra-yatnalkar-2477b3148/) | [GitHub](https://github.com/yogendra-yatnalkar) | [YouTube](https://www.youtube.com/channel/UCBv-Hg0vmSRdiUSlWDbcTTg) |
+| **Connect/Follow Over** | yogenyat@gmail.com | [LinkedIn](https://www.linkedin.com/in/yogendra-yatnalkar-2477b3148/) | [GitHub](https://github.com/yogendra-yatnalkar) | [YouTube](https://www.youtube.com/channel/UCBv-Hg0vmSRdiUSlWDbcTTg) | -->
+
+
+**Connect/Follow Over**:
+
+- yogenyat@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/yogendra-yatnalkar-2477b3148/)
+- [YouTube](https://www.youtube.com/channel/UCBv-Hg0vmSRdiUSlWDbcTTg)
+- [GitHub](https://github.com/yogendra-yatnalkar)
 
 ## About Me:
 
-![](index/dbe15eb43570e14c754478fe250f1003a321be0c.jpg)
+<!-- ![](index/dbe15eb43570e14c754478fe250f1003a321be0c.jpg) -->
 
 I am a **Senior Machine Learning Engineer with over three years** of industry experience, working mainly on **AWS** cloud and partly on **GCP** cloud. In my current organization, I play three roles:
 
