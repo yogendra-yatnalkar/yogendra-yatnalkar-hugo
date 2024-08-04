@@ -44,5 +44,14 @@ https://stackoverflow.com/questions/2776211/how-can-i-multiply-and-divide-using-
     - To get a max-heap, multiply each number in the heap with **-1**.
 
 
+#### 3. Array:
+
+-  **Contunuous Subarray Sum**:
+    - https://leetcode.com/problems/continuous-subarray-sum/?envType=daily-question&envId=2024-06-08 
+    - The trick here is: *while continuously adding numbers to an exiting sum, at initial stage, if we have a remainder r1 for sum s1 (assuming we are deviding by some int k), if this same remainer r1 repeats at some point, it means, the numbers added after s1 are divisible by k*
+    - ***Neetcode***: https://www.youtube.com/watch?v=OKcrLfR-8mE 
+
+
+
 
 
