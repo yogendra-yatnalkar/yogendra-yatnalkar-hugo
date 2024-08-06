@@ -36,4 +36,9 @@ Last Edited: 05/08/2024
 
 ## Description:
 
-Trying to play with Anthropic Claude V3 (Haiku and Sonnet). My theory is that these VLM's are quite good in deciding how to drive based on current input frame and the past actions. Need to confirm the hypothesis.
+Trying to play with Anthropic Claude V3 (Sonnet). My theory is that these VLM's can be quite good in deciding how to drive based on current input frame and the past actions. Need to confirm the hypothesis.
+
+## Conclusion:
+
+The results were less than stellar. The Sonnet VLM could only manage to drive the car in a straight line 😂.
+**Sonnet 3 is not a competent driver out of the box.**
