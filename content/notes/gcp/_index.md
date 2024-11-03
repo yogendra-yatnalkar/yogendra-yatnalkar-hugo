@@ -1,10 +1,10 @@
 ---
-title: Notes
+title: GCP
 # bookFlatSection: false
-# bookToc: true
-bookHidden: false
+# bookToc: false
+# bookHidden: true
 bookCollapseSection: true
 bookComments: false
 # bookSearchExclude: false
-# weight: -1
+# weight: 20
 ---

@@ -100,3 +100,17 @@ Scribbling the content seen in the day:
 
 - **Residual Connection/Skip Connection:**
     - In skip connection, since we are adding the intial output to some further layer output, we should take care to keep the **h * w * c** same. 
+
+## October:
+
+- **Why do we need non-linearity in NN ?**
+    - Non-linearity is needed in activation functions because its aim in a neural network is to produce a nonlinear decision boundary via non-linear combinations of the weight and inputs.
+    - non-linear means that the output cannot be reproduced from a linear combination of the inputs (which is not the same as output that renders to a straight line--the word for this is affine). 
+    - [Stackoverflow Link](https://stackoverflow.com/questions/9782071/why-must-a-nonlinear-activation-function-be-used-in-a-backpropagation-neural-net#:~:text=Non%2Dlinearity%20is%20needed%20in,of%20the%20weight%20and%20inputs.)
+    - ![from stack](daily-scribble/image-1.png)
+
+- **L1 and L2 Regularization:** 
+    - Helps in model generalization 
+    - L1 --> Lasso --> Loss = loss_fcn + gamma * (|wt1| + |wt2| + ...) --> Makes weights of less important feature as 0, hence useful for feature selection --> Geometry is square
+    - L2 --> Ridge --> Loss = loss_fcn + gamma * sqrt(|wt1|**2 + |wt2|**2 + ...) --> shrinks wts towards 0 but not full 0 --> Geometry is circle 
+    - ![ ](daily-scribble/image-2.png)
