@@ -18,7 +18,7 @@ bookComments: false
 
 |  |    |    |      |        
 | ----- | ----- | ------ | ---- | 
-| **Connect Over** |  | yogenyat@gmail.com | [LinkedIn](https://www.linkedin.com/in/yogendra-yatnalkar-2477b3148/) |  
+| **Connect Over** |  | [LinkedIn](https://www.linkedin.com/in/yogendra-yatnalkar-2477b3148/) | yogenyat@gmail.com |  
 | **Follow Over**  |                    | [GitHub](https://github.com/yogendra-yatnalkar)                       | [YouTube](https://www.youtube.com/channel/UCBv-Hg0vmSRdiUSlWDbcTTg) |                                                                     |
 
 
