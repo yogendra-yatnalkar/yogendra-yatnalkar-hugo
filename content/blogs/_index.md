@@ -12,6 +12,14 @@ bookComments: false
 
 ---
 
+### [Dynamic Color Quantization](/blogs/dynamic-color-quantization.html)
+
+- **Date:** March 22, 2025 
+
+- **Github Link**: https://github.com/yogendra-yatnalkar/dynamic-color-quantization
+
+---
+
 ### [Promptless Task-Specific Finetuning of MetaAI Segment-Anything](/blogs/promptless-taskspecific-finetuning-segment-anything.html)
 
 - **Date:** January 01, 2024
